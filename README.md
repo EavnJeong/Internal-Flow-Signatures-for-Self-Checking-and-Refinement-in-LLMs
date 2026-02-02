@@ -1,6 +1,11 @@
 # Internal-Flow-Signatures-for-Self-Checking-and-Refinement-in-LLMs
 This repository extracts depthwise internal flow signatures from autoregressive LLM generation, trains a lightweight validator to predict hallucination, and applies a localized refinement that reduces hallucination by intervening once during regeneration.
 
+<p align="center">
+  <img src="fig/overview.jpg" width="100%">
+</p>
+
+
 ## What this codebase does
 1. Extract flow features from a base LLM while it generates answers on a dataset.
 2. Train a validator on the extracted flow to classify hallucination vs non hallucination.
